@@ -3,6 +3,7 @@ import styles from "./styles";
 
 
 import {
+  IslandInfo,
   Navbar,
   Hero,
 } from "./components"
@@ -24,8 +25,9 @@ const App = () => (
     </div>
     <div className={`${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        
+
       </div>
+      <IslandInfo />
 
     </div>
   </div>
