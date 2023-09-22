@@ -1,4 +1,4 @@
-import { address, clinic_2, clinic_22, clinic, close, dropdown, dropdown1, dr_patricia, email, facebook, Group, hero_img, icon_1, icon_2, icon_3, icon_4, implant_1, implant_2, implant_3, implant_4, implant_5, implant_6, LOGO, map, menu, message, telephone, Star, phone, Union, whatsapp, location, arrow } from "../assets";
+import { address, email, implant_1, implant_2, implant_3, implant_4, implant_5, implant_6, message, telephone, Star, phone, whatsapp, location, arrow } from "../assets";
 
 
 export const navLinks = [
@@ -114,25 +114,25 @@ export const card = [
 ];
 
 
-export const getInTouch = [
-    {
-        icon: email,
-        title: "Write to us by email",
-        para: "info@tudentista.com.ar"
-    },
-    {
-        icon: whatsapp,
-        title: "Chat with us",
-        para: "+54 35176085XX"
-    },
-    {
-        icon: phone,
-        title: "Callus",
-        para: "+081 888 9002"
-    },
-    {
-        icon: address,
-        title: "Call us",
-        para: "Av. Color 1338, Barrio Alberdi"
-    },
-]
+// export const getInTouch = [
+//     {
+//         icon: email,
+//         title: "Write to us by email",
+//         para: "info@tudentista.com.ar"
+//     },
+//     {
+//         icon: whatsapp,
+//         title: "Chat with us",
+//         para: "+54 35176085XX"
+//     },
+//     {
+//         icon: phone,
+//         title: "Callus",
+//         para: "+081 888 9002"
+//     },
+//     {
+//         icon: address,
+//         title: "Call us",
+//         para: "Av. Color 1338, Barrio Alberdi",
+//     },
+// ];

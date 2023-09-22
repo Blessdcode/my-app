@@ -1,11 +1,16 @@
+import Navbar from "./Navbar";
 import Hero from "./Hero";
 import IslandInfo from "./IslandInfo";
-import Navbar from "./Navbar";
+import Service from "./Service"
+import Testimonials from "./Testimonials";
 
 
 
 export {
     Navbar,
-    IslandInfo,
     Hero,
+    IslandInfo,
+    Service,
+    Testimonials,
+
 }

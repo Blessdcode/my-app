@@ -1,11 +1,14 @@
 import React from "react";
 import styles from "./styles";
+import { Swipe } from "./components/Testimonials";
 
 
 import {
-  IslandInfo,
   Navbar,
   Hero,
+  IslandInfo,
+  Service,
+  Testimonials,
 } from "./components"
 
 
@@ -18,17 +21,18 @@ const App = () => (
         </div>
       </div>
     </div>
-    <div className={`bg-[#FFF9FD]${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
+    <div className={`${styles.flexStart} ${styles.paddingX}`}>
+      <div className={`${styles.boxWidth} `}>
         <Hero />
       </div>
     </div>
     <div className={`${styles.paddingX} ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-
+      <div className={`${styles.boxWidth} m-auto`}>
+        <IslandInfo />
+        <Service />
+        <Testimonials />
+        <Swipe/>
       </div>
-      <IslandInfo />
-
     </div>
   </div>
 );

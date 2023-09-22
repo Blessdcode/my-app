@@ -3,11 +3,13 @@ const styles = {
   
   boxWidth: "xl:max-w-[1280px] w-full",
 
-  paragraph: "font-sans font-normal text-Grey_Color text-[14px] md:text-[20px] leading-[30.8px]",
-  heading: "font-poppins text-[32px] md:text-[64px] font-[600] drop-shadow-[5px_5px_0px #D4E4F4]",
+  paragraph: "font-sans font-normal text-Grey_Color text-[14px] md:text-[20px] md:leading-[30.8px] leading-[21px]",
+  heading: "font-poppins text-[32px] md:text-[64px] md:leading-[96px] leading-[40px] font-[600]",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
+  flexEnd: "flex justify-center items-end",
+  flexBetween:"flex justify-between items-center",
 
   paddingX: "sm:px-16 px-6",
   paddingY: "sm:py-16 py-6",
