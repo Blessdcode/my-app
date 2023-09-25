@@ -1,4 +1,4 @@
-import { address, email, implant_1, implant_2, implant_3, implant_4, implant_5, implant_6, message, telephone, Star, phone, whatsapp, location, arrow } from "../assets";
+import { address, email, implant_1, implant_2, implant_3, implant_4, implant_5, implant_6, message, telephone, Star, phone, whatsapp, location, arrow, clinic, clinic_2, clinic_3, clinic_4, clinic_5, clinic_6, clinic_7, service } from "../assets";
 
 
 export const navLinks = [
@@ -12,7 +12,7 @@ export const navLinks = [
     },
     {
         id: "about_us",
-        name: "About Us"
+        name: "About Me"
     },
     {
         id: "contact",
@@ -23,11 +23,12 @@ export const navLinks = [
 
 
 export const islandInfo = [
+   
     {
-        id: "address",
-        name: "Address",
-        det: "Av. Color 1560 Cordoba, Cordoba Capital",
-        icon: location,
+        id: "telephone",
+        name: "Telephone",
+        det: "08181927003",
+        icon: telephone,
     },
     {
         id: "email",
@@ -36,11 +37,12 @@ export const islandInfo = [
         icon: email,
     },
     {
-        id: "telephone",
-        name: "Telephone",
-        det: "08181927003",
-        icon: telephone,
+        id: "address",
+        name: "Address",
+        det: "Av. Color 1560 Cordoba, Cordoba Capital",
+        icon: location,
     },
+
 ];
 
 export const ourServices = [
@@ -97,7 +99,7 @@ export const ourServices = [
 export const card = [
     {
         id: "card-1",
-        name: "Matias Gomez",
+        name: "John Doe",
         icon: Star,
         content: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames."
     },
@@ -114,8 +116,20 @@ export const card = [
         content: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames."
     },
     {
-        id: "card-3",
-        name: "Savila Ros",
+        id: "card-4",
+        name: "Bose Pet",
+        icon: Star,
+        content: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames."
+    },
+    {
+        id: "card-5",
+        name: "King",
+        icon: Star,
+        content: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames."
+    },
+    {
+        id: "card-6",
+        name: "Roseline",
         icon: Star,
         content: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames."
     },
@@ -144,3 +158,142 @@ export const getInTouch = [
         para: "Av. Color 1338, Barrio Alberdi",
     },
 ];
+
+
+export const clinicPic = [
+    {
+        id: "clinic_1",
+        img: clinic
+    },
+    {
+        id: "clinic_2",
+        img: clinic_2
+    },
+    {
+        id: "clinic_3",
+        img: clinic_3
+    },
+    {
+        id: "clinic_4",
+        img: clinic_4
+    },
+    {
+        id: "clinic_5",
+        img: clinic_5
+    },
+    {
+        id: "clinic_6",
+        img: clinic_6
+    },
+    {
+        id: "clinic_7",
+        img: clinic_7
+    },
+
+]
+
+
+export const about = [
+    {
+        id: "det-1",
+        content: "Medical Surgeon, graduated from the National University of Córdoba, Argentina.",
+        dot: "."
+    },
+    {
+        id: "det-2",
+        content: "Dentist, graduate of the University of Paris, France",
+        dot: "."
+    },
+    {
+        id: "det-3",
+        content: "Lecturer at the National University of Córdoba since",
+        dot: "."
+    },
+    {
+        id: "det-4",
+        content: "Member of the following Academies:",
+        dot: "."
+    },
+    {
+        id: "det-5",
+        content: "A.L.A.O: Latin American Academy of Osseointegration. ",
+        dot: "."
+    },
+    {
+        id: "det-6",
+        content: "A.I.I.O: International Academy of Implants and Osseointegration . Founding Member",
+        dot: "."
+    },
+    {
+        id: "det-7",
+        content: "A.V.O.I.O: Venezuelan Academy of Osseointegration and Oral Implantology. Honorary Member. ",
+        dot: "."
+    },
+    {
+        id: "det-8",
+        content: "Pierre Fauchard Academy: U.S. Honor Academy of Dentistry. ",
+        dot: "."
+    },
+    {
+        id: "det-9",
+        content: "A.I.I.P: International Academy of Implantology and Periodontics – Barcelona. President International. ",
+        dot: "."
+    },
+];
+
+
+export const faqs = [
+    {
+
+        title: "What social works do they accept?",
+        content: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames. Convallis ornare praesent mollis at habitasse morbi eu ridiculus, tristique proin venenatis dictum nisl volutpat interdum, eleifend velit erat mi penatibus nibh curabitur."
+    },
+    {
+
+        title: "What social works do they accept?",
+        content: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames. Convallis ornare praesent mollis at habitasse morbi eu ridiculus, tristique proin venenatis dictum nisl volutpat interdum, eleifend velit erat mi penatibus nibh curabitur."
+    },
+    {
+
+        title: "What social works do they accept?",
+        content: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames. Convallis ornare praesent mollis at habitasse morbi eu ridiculus, tristique proin venenatis dictum nisl volutpat interdum, eleifend velit erat mi penatibus nibh curabitur."
+    },
+    {
+
+        title: "What social works do they accept?",
+        content: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames. Convallis ornare praesent mollis at habitasse morbi eu ridiculus, tristique proin venenatis dictum nisl volutpat interdum, eleifend velit erat mi penatibus nibh curabitur."
+    },
+    {
+
+        title: "What social works do they accept?",
+        content: "Lorem ipsum dolor sit amet consectetur adipiscing elit conubia, massa facilisi lectus ullamcorper ridiculus potenti iaculis nibh, interdum faucibus ad diam vivamus vehicula fames. Convallis ornare praesent mollis at habitasse morbi eu ridiculus, tristique proin venenatis dictum nisl volutpat interdum, eleifend velit erat mi penatibus nibh curabitur."
+    },
+
+];
+
+export const CTA = [
+    {
+        id: "one",
+        title: "Email us",
+        det: "info@tudentista.com.ar",
+        icon: message
+    },
+    {
+        id: "two",
+        title: "Chat us",
+        det: "+54 35176085XX",
+        icon: whatsapp
+    },
+    {
+        id: "three",
+        title: "Call us",
+        det: "0810 888 90XX",
+        icon: phone
+    },
+    {
+        id: "four",
+        title: "Visit us",
+        det: `Av. Color 1338, Barrio Alberdi`,
+        icon: service
+    },
+]

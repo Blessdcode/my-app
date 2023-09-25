@@ -1,21 +1,15 @@
 import React from 'react'
 import styles, { layout } from '../styles'
 import { card } from '../constants/main'
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-// import 'slick-carousel/slick/slick'
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
-
-export const Swipe = () => {
-    const slider = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    }
-}
 
 
 
@@ -27,10 +21,10 @@ const TestCard = ({ name, content, icon, index }) => (
                 <h3 className='text-[16px] ss:text-[24px] text-[#252525] font-sans font-[400]'>{name}</h3>
             </>
             <div className='flex'>
-                <img src={icon} alt={index} />
+                <img src={icon} alt={name} />
             </div>
         </div>
-        <div>
+        <div className='w-full'>
             {content}
         </div>
     </div>
@@ -44,24 +38,35 @@ const Testimonials = () => (
             <h3 className='text-secondary text-[13px] ss:text-[20px]'>Testimonials</h3> {''}
             <h2 className={`${styles.heading} text-primary heading`}>What our patients think</h2>
         </div>
-        {/* <div className={`flex ${layout.sectionInfo} ${styles.marginY} overflow-x-scroll overscroll-contain py-6 px-2 `}>
-            <div className='flex '>
+        <div className={`flex md:hidden ${layout.sectionInfo} ${styles.marginY} overflow-x-scroll overscroll-contain py-6 px-2 `}>
+            <div className='flex'>
                 {card.map((cards, index) => (
                     <TestCard key={cards.id} {...cards} index={index} />
                 ))}
             </div>
-        </div> */}
+        </div>
+        <div className='hidden md:block '> 
+            <Swiper
+                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                spaceBetween={80}
+                slidesPerView={3}
+                pagination={{ clickable: true }}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log('slide change')}
+            >
+                <div className={`${layout.sectionInfo} ${styles.marginY} py-6 px-2 `}>
+                    <div className='hidden'>
+                        {card.map((cards, index) => (
+                            <SwiperSlide className={`${layout.sectionInfo} ${styles.marginY} py-6 px-2`}>
+                                <TestCard key={cards.id} {...cards} index={index} />
+                            </SwiperSlide>
+                        ))}
 
-        <Slider {...Slider}>
-            <div className={`flex ${layout.sectionInfo} ${styles.marginY} py-6 px-2 `}>
-                <div className='flex '>
-                    {card.map((cards, index) => (
-                        <TestCard key={cards.id} {...cards} index={index} />
-                    ))}
+                    </div>
                 </div>
-            </div>
-        </Slider>
-    </div>
+            </Swiper>
+        </div>
+    </div >
 )
 
 export default Testimonials

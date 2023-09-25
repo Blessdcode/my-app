@@ -25,6 +25,16 @@ import icon_3 from './icon_3.svg'
 import icon_4 from './icon_4.svg'
 import hero_img from './hero_img.png'
 import Union from './Union.png'
+import clinic from './clinic.png'
+import clinic_2 from './clinic_2.png'
+import clinic_3 from './clinic_3.png'
+import clinic_4 from './clinic_4.png'
+import clinic_5 from './clinic_5.png'
+import clinic_6 from './clinic_6.png'
+import clinic_7 from './clinic_7.png'
+import dr_patricia from './dr_patricia.png'
+import service from  './service.svg'
+
 
 
 /**
@@ -61,4 +71,13 @@ export {
     icon_4,
     hero_img,
     Union,
+    clinic,
+    clinic_2,
+    clinic_3,
+    clinic_4,
+    clinic_5,
+    clinic_6,
+    clinic_7,
+    dr_patricia,
+    service,
 }

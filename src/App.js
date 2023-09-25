@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./styles";
-import { Swipe } from "./components/Testimonials";
 
 
 import {
@@ -9,6 +8,11 @@ import {
   IslandInfo,
   Service,
   Testimonials,
+  About,
+  Theater,
+  FAQs,
+  Contact,
+  Footer,
 } from "./components"
 
 
@@ -26,13 +30,21 @@ const App = () => (
         <Hero />
       </div>
     </div>
+    <div className={`${styles.boxWidth} m-auto`}>
+      <IslandInfo />
+    </div>
     <div className={`${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth} m-auto`}>
-        <IslandInfo />
         <Service />
         <Testimonials />
-        <Swipe/>
+        <About />
+        <Theater />
+        <FAQs />
       </div>
+    </div>
+    <div className={`${styles.boxWidth} m-auto gradient `}>
+      <Contact />
+      <Footer />
     </div>
   </div>
 );

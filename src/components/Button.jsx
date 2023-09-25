@@ -29,6 +29,14 @@ export const Btn = () => {
     )
 }
 
+export const CtaBtn =()=>{
+    return(
+        <button className='md:w-[350px] h-[50px] w-full rounded-[12px]  text-center bg-[#FFF9FD] ease-in transition-all '>
+            <span className='font-sans text-[14px] ss:text-[24px] font-[500] capitalize'>Send message</span>
+        </button>
+    )
+}
+
 
 
 export default Button
